@@ -85,7 +85,7 @@
                         </div>
                         <div class="col-12 d-flex justify-content-end mt-3">
                             <button type="submit" class="btn btn-primary me-2">Login</button>
-                            <button type="button" class="btn btn-secondary">Register</button>
+                            <a href="register.php"><button type="button" class="btn btn-secondary">Register</button></a>
                         </div>
                     </form>
                 </div>

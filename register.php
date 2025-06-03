@@ -76,8 +76,8 @@
                 <div class="col-md-4">
                     <form class="row g-3 mt-4">
                         <div class="col-12">
-                            <label for="fullName" class="form-label">Full Name:</label>
-                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name">
+                            <label for="fullName" class="form-label">Nickname:</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your nick name">
                         </div>
                         <div class="col-12">
                             <label for="email" class="form-label">Email:</label>
