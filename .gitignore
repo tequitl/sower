@@ -1,0 +1,79 @@
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# windows thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+/vendor
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+tests/_output/*
+tests/_support/_generated
+
+#vagrant folder
+/.vagrant
+
+#add ignores for yii2 project
+
+# Yii2 specific ignores
+/web/assets/*
+!/web/assets/.gitignore
+/runtime/*
+!/runtime/.gitignore
+/config/db.php
+/config/mailer.php
+/config/params-local.php
+/config/web-local.php
+/config/console-local.php
+/config/test-local.php
+/config/test_db-local.php
+
+# Composer
+composer.lock
+/vendor/
+
+# Environment files
+.env
+
+# IDE / Editor specific
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Build artifacts
+/build/
+
+# Test outputs
+tests/_output/*
+tests/_data/*
+!tests/_data/.gitkeep
+tests/web/assets/*
+!tests/web/assets/.gitignore
+tests/runtime/*
+!tests/runtime/.gitignore
+
+# User-specific files
+/web/uploads/*
+!/web/uploads/.gitkeep

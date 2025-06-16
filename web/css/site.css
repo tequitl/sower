@@ -1,0 +1,51 @@
+.sower-header {
+    background: #7799B7;
+    background: linear-gradient(90deg,rgba(119, 153, 183, 1) 0%, rgba(197, 214, 218, 1) 47%, rgba(197, 214, 218, 1) 100%);
+}
+
+.sower-header .title-column h1 {
+    margin: 0 0 0 15px; 
+    font-size: 2rem;
+    color:rgb(0, 0, 0) ; 
+}
+.sower-header .nav-column {
+    font-size: 1.1rem;
+    text-align: right; 
+}
+.register-box { /* Changed from login-box */
+    background: #fff;
+    border: 1px solid #ccc;
+    margin: 40px auto;
+    max-width: 800px;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.register-title { /* Changed from login-title */
+            background: #f5f6fa;
+            padding: 15px 30px;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: bold;
+            font-size: 1.2rem;
+}
+.register-content { /* Changed from login-content */
+            padding: 30px;
+}
+.form-label {
+            font-weight: 500;
+}
+.btn-primary, .btn-secondary {
+            min-width: 100px;
+}
+.footer {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
+            margin-top: 40px;
+}
+.school-list {
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+}
+.school-list strong {
+            font-weight: bold;
+}
