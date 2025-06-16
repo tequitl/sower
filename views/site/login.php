@@ -12,44 +12,52 @@ $this->title = 'Login';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="site-login">
-    <h1><?= Html::encode($this->title) ?></h1>
+<div class="login-box">
+        <div class="login-content">
+            <div class="row">
+                <div class="col-md-4">
+                            <?php $form = ActiveForm::begin([
+                            'id' => 'login-form',
+                            'fieldConfig' => [
+                                'template' => "{label}\n{input}\n{error}",
+                                'labelOptions' => ['class' => 'col-lg-1 col-form-label mr-lg-3'],
+                                'inputOptions' => ['class' => 'col-lg-3 form-control'],
+                                'errorOptions' => ['class' => 'col-lg-7 invalid-feedback'],
+                            ],
+                        ]); ?>
 
-    <p>Please fill out the following fields to login:</p>
+                        <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
 
-    <div class="row">
-        <div class="col-lg-5">
+                        <?= $form->field($model, 'password')->passwordInput() ?>
 
-            <?php $form = ActiveForm::begin([
-                'id' => 'login-form',
-                'fieldConfig' => [
-                    'template' => "{label}\n{input}\n{error}",
-                    'labelOptions' => ['class' => 'col-lg-1 col-form-label mr-lg-3'],
-                    'inputOptions' => ['class' => 'col-lg-3 form-control'],
-                    'errorOptions' => ['class' => 'col-lg-7 invalid-feedback'],
-                ],
-            ]); ?>
+                        <?= $form->field($model, 'rememberMe')->checkbox([
+                            'template' => "<div class=\"custom-control custom-checkbox\">{input} {label}</div>\n<div class=\"col-lg-8\">{error}</div>",
+                        ]) ?>
 
-            <?= $form->field($model, 'username')->textInput(['autofocus' => true]) ?>
+                        <div class="form-group">
+                            <div>
+                                <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                            </div>
+                        </div>
 
-            <?= $form->field($model, 'password')->passwordInput() ?>
-
-            <?= $form->field($model, 'rememberMe')->checkbox([
-                'template' => "<div class=\"custom-control custom-checkbox\">{input} {label}</div>\n<div class=\"col-lg-8\">{error}</div>",
-            ]) ?>
-
-            <div class="form-group">
-                <div>
-                    <?= Html::submitButton('Login', ['class' => 'btn btn-primary', 'name' => 'login-button']) ?>
+                        <?php ActiveForm::end(); ?>
+                </div>
+                <div class="col-md-8">
+                    <h4 class="mb-3">[ Welcome to Sower ]</h4>
+                    <p>Sower is an online directory that connects people through decentralized social networks.</p>
+                    <div class="school-list mb-3">
+                        <strong>We have planted seeds for popular consumption at:</strong><br>
+                        <span class="text-secondary">CDMX-México &middot; Ecatepec-México </span>
+                    </div>
+                    <p>Your decide if your profile is public as normal Worpress page or  is limited to your owGeormmunity or network.</p>
+                    <ul>
+                        <li>Search for people in your network</li>
+                        <li>Find out who is in your groups</li>
+                        <li>Look up your friends' friends</li>
+                        <li>See a visualization of your social network</li>
+                    </ul>
                 </div>
             </div>
-
-            <?php ActiveForm::end(); ?>
-
-            <div style="color:#999;">
-                You may login with <strong>admin/admin</strong> or <strong>demo/demo</strong>.<br>
-                To modify the username/password, please check out the code <code>app\models\User::$users</code>.
-            </div>
-
         </div>
     </div>
 </div>

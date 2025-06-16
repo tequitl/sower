@@ -36,7 +36,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
             <h1>[ sower ]</h1>
             <div style="font-size:1.1rem;">
                 <?= Html::a('login', ['/site/login']) ?> &nbsp; 
-                <?= Html::a('register', ['/site/signup']) ?> &nbsp; 
+                <?= Html::a('register', ['/site/register']) ?> &nbsp; 
                 <?= Html::a('about', ['/site/about']) ?>
             </div>
         </div>
